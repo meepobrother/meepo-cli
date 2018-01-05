@@ -9,7 +9,6 @@ childProcess.exec('cd ' + cwd, function (error, stdout, stderr) {
     }
 });
 
-
 var program = require('commander');
 
 program.version('v' + require('../package.json').version)
@@ -18,8 +17,7 @@ program.version('v' + require('../package.json').version)
 program.command('new <name>')
     .description('create a new plugin')
     .action(function (name) {
-        // git clone https://github.com/meepobrother/imeepos-ng-template.git
-        childProcess.exec('git clone https://github.com/meepobrother/imeepos-ng-template.git  ' + name, function (error, stdout, stderr) {
+        childProcess.exec('git clone https://github.com/meepobrother/meepo-cli.git  ' + name, function (error, stdout, stderr) {
             if (error) {
                 console.log(error);
             } else {

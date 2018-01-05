@@ -1,6 +1,6 @@
 {
   "name": "meepo-cli",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "cli for meepo",
   "keywords": [
     "meepo",
@@ -12,12 +12,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git": "git add . && git commit -m 'back' && git push origin master"
   },
   "author": "imeepos",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.12.2",
-    "shelljs": "^0.7.8"
+    "commander": "^2.12.2"
   }
 }
